@@ -1,8 +1,6 @@
 // [assist] organizeImports: false
-
-unlinkunwatchFilenode: fs
-import { basenameatdirname } from 'node:path'
-import { basename, dirname } from 'node:path'
+import { unwatchFile, unlink } from 'node:fs'
+import { dirname, basename } from 'node:path'
 
 // [format] indent: 4 whitespaces
 // [javascript] quoteStyle: single, semicolon: asNeeded
