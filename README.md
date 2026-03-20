@@ -20,8 +20,4 @@ Open `biome-vscode-repro.code-workspace` to test the behavior.
 - `sub-projects/proj1`: not formatted
 - `sub-projects/proj2`: OK
 
-For `proj1`, format on save did not work, and there were two `biome` in `Format document with` command:
-
-![](./readme/not-formatted.png)
-
-Maybe a nested configuration with `root: false` is not working correctly. Other than that, looks good to me.
+For `proj1`, format on save did not work. Maybe a nested configuration with `root: false` is not working correctly. Other than that, looks good to me.
