@@ -2,15 +2,21 @@
   "$schema": "https://biomejs.dev/schemas/2.3.11/schema.json",
   "formatter": {
     "enabled": true,
-    "indentStyle": "space",
-    "indentWidth": 2,
+    "indentStyle": "tab",
     "bracketSameLine": false,
     "bracketSpacing": true
   },
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "complexity": {
+        "noExcessiveCognitiveComplexity": {
+          "level": "warn",
+          "options": {
+            "maxAllowedComplexity": 16
+          }
+        }
+      }
     }
   },
   "javascript": {
