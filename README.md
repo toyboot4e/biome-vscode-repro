@@ -1,5 +1,7 @@
 # biome-vscode on multi-root setup
 
+Open `biome-vscode-repro.code-workspace` to test the behavior.
+
 ## Project configurations
 
 | Configuration           | //              | sub-projects/proj1   | sub-projects/proj2            |
