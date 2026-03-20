@@ -1,17 +1,15 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.11/schema.json",
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "formatter": {
     "enabled": true,
-    "indentStyle": "tab",
-    "bracketSameLine": false,
-    "bracketSpacing": true
+    "indentStyle": "tab"
   },
   "linter": {
     "enabled": true,
     "rules": {
       "complexity": {
         "noExcessiveCognitiveComplexity": {
-          "level": "warn",
+          "level": "error",
           "options": {
             "maxAllowedComplexity": 16
           }
@@ -21,16 +19,7 @@
   },
   "javascript": {
     "formatter": {
-      "jsxQuoteStyle": "single",
-      "trailingCommas": "none"
-    }
-  },
-  "assist": {
-    "enabled": false,
-    "actions": {
-      "source": {
-        "organizeImports": "on"
-      }
+      "quoteStyle": "double"
     }
   }
 }
